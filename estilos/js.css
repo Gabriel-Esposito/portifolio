@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --cor1: #BFBFBF;
+    --cor2: #8AA6A3;
+    --cor3: #425f5d;
+    --cor4: #127369;
+    --cor5: #10403B;
+    --fonte-forte: 'Asap', sem serifa;
+    --fonte-txt: 'Roboto', sans-serif;
+    --fonte-teste: 'Oswald', sans-serif;
+}
+
+/* 
+1-Yellow
+2- blue
+3- red
+4- Green
+5- Roxo
+6- laranja
+7- azul-cinza
+*/
+
+article > img{
+    display: block;
+    margin: auto;
+    width: 35%;
+    padding: 30px;
+}
+
+.circulos{
+    width: auto;
+    height: auto;
+}
+.bola{
+    display: inline-block;
+    background-color: #10403B;
+    width: 60px;
+    height: 60px;
+    margin-top: 4px;
+    margin-left: 67px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+#cor1 , #corA{
+    background-color: #F2BE22;
+}
+#cor2 , #corB{
+    background-color: #1790BF;
+}
+#cor3 , #corC{
+    background-color: #BF0413;
+}
+#cor5 , #corE{
+    background-color: #34113F;
+}
+#cor6 , #corF{
+    background-color: #E08E45;
+}
+#cor7 , #corG{
+    background-color: #1D4B5E;
+}
+#CorTexto , #CorFundo{
+    background-color: #ad9845;
+}
+#CorTexto > h1 , #CorFundo > h1{
+    background-image: linear-gradient(to right, #40350ade, #ad9845);
+}
+aside{
+    margin-bottom: 30px;
+    padding-bottom: 18px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: var(--cor2);
+}
+aside > h1{
+    font-weight: 600;
+    font-size: 1.3em;
+    color: white;
+    padding: 14px;
+    border-radius: 10px 10px 0px 0px;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor2));
+}
+aside > p{
+    padding: 20px;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+aside > img{
+    display: block;
+    margin: auto;
+    width: 35%;
+}
+aside > a{
+    display: block;
+    width: 88px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: var(--fonte-forte);
+    font-weight: 600;
+    background-color: var(--cor3);
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: auto;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.24);
+    transition: 0.5s;
+}
+aside > a:hover{
+    width: 100px;
+    font-size: 1.1em;
+    background-color: rgb(18, 18, 112);
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.575);
+}

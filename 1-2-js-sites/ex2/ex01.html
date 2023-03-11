@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idades</title>
+    <link rel="stylesheet" href="estilo1.css">
+</head>
+<body>
+    <header>
+        <h1>Verifiador de idades </h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="1">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="masculino" checked>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="radsex" id="feminino">
+                <label for="feminino">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+           Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; <a href="https://github.com/Lendario-br/" target="_blank">Gabriel de Abreu Espósito</a></p>
+    </footer>
+
+    <script src="script1.js">
+        // esse tipo de arquivo é usado para importar o JS pro site
+    </script> 
+</body>
+</html>

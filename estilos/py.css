@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* cores:
+1- #011627
+2- #C6CAED
+3- #06A77D
+4- #247BA0
+5- #0B7189
+*/
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --cor1: #BFBFBF;
+    --cor2: #8AA6A3;
+    --cor3: #425f5d;
+    --cor4: #127369;
+    --cor5: #10403B;
+    --cor-download: #40163C;
+    --fonte-forte: 'Asap', sem serifa;
+    --fonte-txt: 'Roboto', sans-serif;
+    --fonte-teste: 'Oswald', sans-serif;
+}
+
+img{
+    max-width: 200px;
+    display: block;
+    margin: auto;
+}
+
+aside{
+    background-color: var(--cor2);
+    border-radius: 10px 0px  10px  0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.082);
+}
+aside > h1{
+    padding: 14px;
+    color: white;
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor4));
+    border-radius: 10px 0px 0px 0px;
+}
+aside > p{
+    margin-top: 8px;
+    text-indent: 10px;
+    text-align: justify;
+    line-height: 1.2em;
+}
+aside > p > a{
+    color: var(--cor4);
+    text-decoration: none;
+}
+aside > p > a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+ul > li{
+    padding: 4px;
+}
+li > a{
+    text-decoration: none;
+    color: var(--cor-download);
+}
+li > a:hover{
+    color: black;
+    text-decoration: underline;
+}

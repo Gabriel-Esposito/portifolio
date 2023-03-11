@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos/login.css">
+</head>
+<body>
+    <main>
+        <div class="esquerda">
+            <h1>Crie sua conta agora e aproveite os beneficios</h1>
+            <h4>teste</h4>
+            <img src="imagens/Forest-bro.svg" alt="floresta" id="floresta">
+        </div>
+
+        <div class="direita">
+            <div class="login">
+            <h1>LOGIN</h1>
+            <label for="user">Usuário</label>
+            <input type="text" name="user" id="user" placeholder="Usuário">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Senha">
+            <input type="button" value="LOGIN" id="botao" onclick="entrar()">
+            <p>By: <a href="https://github.com/Lendario-br/" target="_blank" id="creditos">Gabriel</a></p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function entrar(){
+            let name = document.getElementById('user')
+            let n = String(name.value)
+            let senha = document.getElementById('senha')
+            let s = String(senha.value)
+            if(n == ''){
+                window.alert('Preencha o campo do nome!')
+            }else if (s == '') {
+                window.alert('Preencha o campo da senha!')
+            }else{
+                window.location.href='home.html'
+            }
+        }
+    </script>
+</body>
+</html>

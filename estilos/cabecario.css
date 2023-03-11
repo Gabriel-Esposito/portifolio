@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/* cores:
+1- #011627
+2- #C6CAED
+3- #06A77D
+4- #247BA0
+5- #0B7189
+*/
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --cor1: #BFBFBF;
+    --cor2: #8AA6A3;
+    --cor3: #425f5d;
+    --cor4: #127369;
+    --cor5: #10403B;
+    --fonte-forte: 'Asap', sem serifa;
+    --fonte-txt: 'Roboto', sans-serif;
+    --fonte-teste: 'Oswald', sans-serif;
+}
+
+body{
+    background-color: var(--cor2);
+    margin: 0;
+    font-family: var(--fonte-txt), serif;
+}
+
+header{
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to top, var(--cor5), var(--cor4));
+    padding: 10px;
+}
+header > h1{
+    margin: 0;
+    font-family: var(--fonte-teste), sans-serif;
+    font-weight: 500;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.514);
+}
+
+nav{
+    background-color: var(--cor5);
+    padding: 10px 20px;
+}
+nav > a{
+    color: white;
+    font-family: var(--fonte-teste), sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 0px 14px;
+    transition: 0.5s;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.514);
+}
+nav > a:hover{
+    color: var(--cor4);
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.363);
+    border-radius: 4px;
+}
+
+main{
+    background-color: var(--cor1);
+    max-width: 1000px;
+    min-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 6px 7px 10px rgba(0, 0, 0, 0.267);
+}
+main h1 , p{
+    margin: 0;
+}
+
+article{
+    padding: 10px;
+}
+article > h1{
+    font-family: var(--fonte-teste);
+    padding: 10px;
+    font-size: 2em;
+    color: var(--cor4);
+
+}
+article > p{
+    text-align: justify;
+    text-indent: 10px;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    padding: 10px;
+}
+
+footer{
+    font-family: var(--fonte-teste);
+    font-weight: 500;
+    background-color: var(--cor5);
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    font-size: 1em;
+    color: white;
+}
+
+footer a{
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+
+}
+footer a:hover{
+    text-decoration: underline;
+    color: black;
+}
