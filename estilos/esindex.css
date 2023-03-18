@@ -205,19 +205,22 @@ span{
     main{
         height: 100%;
     }
-    
+    header{
+        display: flex;
+        flex-direction: column;
+    }
     div.txt{
-        margin-left: 10px;
+        margin: auto;
     }
     .txt > h4{
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
     div.navegador{
-        margin-right: 10px;
+        margin: auto;
     }
     .navegador > nav > a{
-        padding: 2px 8px 2px 8px;
-        font-size: 0.9em;
+        padding: 2px 6px 2px 6px;
+        font-size: 1em;
     }
     .navegador > nav > a:hover{
         font-size: 1em;
@@ -251,11 +254,11 @@ span{
     .social{
 
         margin-top: 20px;
-        margin-left: 100px;
+        margin-left: 40px;
     }
     div#botao{
         margin-top: 40px;
-        margin-left: 110px;
+        margin-left: 64px;
     }
     #botao:hover{
         font-size: 1.1em;
