@@ -4,44 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="estilos/login.css">
+    <title>Portifolio 2.0</title>
+    <link rel="stylesheet" href="esindex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <main>
-        <div class="esquerda">
-            <h1>Crie sua conta agora e aproveite os beneficios</h1>
-            <h4>teste</h4>
-            <img src="imagens/Forest-bro.svg" alt="floresta" id="floresta">
-        </div>
-
-        <div class="direita">
-            <div class="login">
-            <h1>LOGIN</h1>
-            <label for="user">Usuário</label>
-            <input type="text" name="user" id="user" placeholder="Usuário">
-            <label for="senha">Senha</label>
-            <input type="password" name="senha" id="senha" placeholder="Senha">
-            <input type="button" value="LOGIN" id="botao" onclick="entrar()">
-            <p>By: <a href="https://github.com/Lendario-br/" target="_blank" id="creditos">Gabriel</a></p>
+        <header>
+            <div class="txt"><h4 id="portifolio">Portifolio</h4></div>
+            <div class="navegador">
+                <nav>
+                    <a href="#">HOME</a>
+                    <a href="#">CONTATO</a>
+                    <a href="#">LOGIN</a>
+                    <a href="#">PROJETOS</a>
+                </nav>
             </div>
-        </div>
+        </header>
+
+        <article>
+            <div class="esquerda">
+                <div class="textEsquerda">
+                    <h2>Olá, esse sou eu</h2>
+                    <h1 id="autor">Gabriel de Abreu</h1>
+                    <h4>Eu sou um <span>dev frontend</span></h4>
+                    <p>Atualmente estudando e melhorando minhas habilidades como dev frontend. Mais informações basta ir em “home”.  
+                    </p>
+                </div>
+                <div class="social">
+                        <i class="fa fa-github" style="font-size:36px;color:white" id="git" onclick="git()"></i>
+                        <i class="fa fa-linkedin-square" style="font-size:36px;color:white"></i>
+                        <i class="fa fa-youtube-play" style="font-size:36px;color:white"></i>
+                        <i class="fa fa-twitter" style="font-size:36px;color:white"></i>
+                </div>
+                <div id="botao" onclick="home()">
+                    <p>IR PARA HOME</p>
+                </div>
+                
+            </div>
+
+            <div class="direita">
+                <div class="foto">
+                    <img src="WhatsApp_Image_2023-03-17_at_22.55.55-removebg-preview.png" alt="imagem do altor">
+                </div>
+            </div>
+        </article>
     </main>
 
-    <script>
-        function entrar(){
-            let name = document.getElementById('user')
-            let n = String(name.value)
-            let senha = document.getElementById('senha')
-            let s = String(senha.value)
-            if(n == ''){
-                window.alert('Preencha o campo do nome!')
-            }else if (s == '') {
-                window.alert('Preencha o campo da senha!')
-            }else{
-                window.location.href='home.html'
-            }
-        }
-    </script>
+    <script src="esindex.css"></script>
 </body>
 </html>

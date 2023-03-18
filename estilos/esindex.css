@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,500;1,700;1,900&display=swap');
+
+:root{
+    --cor1:#0D5B8C;
+    --cor2:#1F6A73;
+    --cor3:#03738C;
+    --cor4:#033A40;
+    --cor5:#011F26;
+    --font-destaque:'Pridi';
+    --font-padrao:'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--cor5);
+    margin: 0;
+    margin-top: 100px;
+    font-family: var(--font-padrao);
+}
+
+main{
+    background-color: var(--cor4);
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+    border-radius: 20px;
+}
+
+header{
+    display: flex;
+    height: 5vh;
+}
+
+div.txt{
+    margin-right: auto;
+    margin-left: 40px;
+    margin-top: 9px;
+}
+.txt > h4{
+    margin: 0;
+    font-size: 1.5em;
+    font-family: var(--font-destaque);
+    color: var(--cor3);
+}
+
+div.navegador{
+    margin-left: auto;
+    margin-right: 40px;
+    margin-top: 9px;
+}
+.navegador > nav > a{
+    padding: 2px 20px 2px 20px;
+    font-size: 1.3em;
+    font-family: var(--font-destaque);
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+.navegador > nav >a:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.486);
+    border-radius: 5px;
+    background-color: var(--cor5);
+    font-size: 1.33em;
+}
+
+article{
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+.esquerda{
+    width: 50%;
+}
+.direita{
+    width: 50%;
+}
+
+.textEsquerda{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    color: white;
+}
+.textEsquerda > h1{
+    margin: 0;
+    font-size: 2.2em;
+    padding-bottom: 14px;
+    font-family: var(--font-destaque);
+}
+.textEsquerda > h2{
+    margin: 0;
+    padding-bottom: 14px;
+    font-weight: 500;
+}
+.textEsquerda > h4{
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.textEsquerda > p{
+    text-align: justify;
+    line-height: 20px;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.social{
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+i{
+    padding-left: 20px;
+}
+
+#botao{
+    border: 2px solid white;
+    border-radius: 40px;
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+#botao > p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: var(--font-destaque);
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: 0.5s;
+}
+#botao:hover{
+    font-size: 1.2em;
+    background-color: var(--cor3);
+    border: 2px solid black;
+    color: white;
+}
+
+div.foto{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    margin: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.foto > img{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, var(--cor2),var(--cor5));
+    border-radius: 10px;
+}
+
+span{
+    color: var(--cor3);
+}
+
+@media only screen and (max-width:900px){
+    .txt > h4{
+        font-size: 1.2em;
+    }
+    .navegador > nav > a{
+        font-size: 1em;
+    }
+    .navegador > nav > a:hover{
+        font-size: 1.1em;
+    }
+
+    .textEsquerda > h1{
+        font-size: 1.9em;
+    }
+    .textEsquerda > h2{
+        font-size: 1.4em;
+    }
+    .textEsquerda > p{
+        font-size:1em ;
+        text-align: center;
+    }
+    
+    .social{
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    div#botao{
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    #botao:hover{
+        font-size: 1.1em;
+    }
+    #botao > p{
+        font-size: 1em;
+    }
+
+    div.foto{
+        margin: auto;
+        margin-top: 90px;
+    }
+}
+@media only screen and (max-width:740px){
+    main{
+        height: 100%;
+    }
+    
+    div.txt{
+        margin-left: 10px;
+    }
+    .txt > h4{
+        font-size: 1.1em;
+    }
+    div.navegador{
+        margin-right: 10px;
+    }
+    .navegador > nav > a{
+        padding: 2px 8px 2px 8px;
+        font-size: 0.9em;
+    }
+    .navegador > nav > a:hover{
+        font-size: 1em;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+    .esquerda{
+        width: 100%;
+    }
+    .direita{
+        width: 100%;
+    }
+
+    .textEsquerda > h1{
+        font-size: 2em;
+    }
+    .textEsquerda > h2{
+        font-size: 1.5em;
+    }
+    .textEsquerda > h4{
+        font-size: 1.3em;
+    }
+    .textEsquerda > p{
+        font-size:1.1em ;
+        text-align: center;
+    }
+    
+    .social{
+
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+    div#botao{
+        margin-top: 40px;
+        margin-left: 110px;
+    }
+    #botao:hover{
+        font-size: 1.1em;
+    }
+    #botao > p{
+        font-size: 1em;
+    }
+
+    div.foto{
+        margin: auto;
+        margin-top: 90px;
+    }
+}
