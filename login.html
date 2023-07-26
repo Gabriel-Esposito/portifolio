@@ -38,7 +38,9 @@
                 window.alert('Preencha o campo do nome!')
             }else if (s == '') {
                 window.alert('Preencha o campo da senha!')
-            }else{
+            }else if (n == 'Admin' && s == 'Admin'){
+                window.location.href='biblioteca-py.html'
+            }else {
                 window.location.href='home.html'
             }
         }
